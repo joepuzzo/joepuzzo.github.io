@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>User Threads</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/hljs-github.min.css"/>
+    <style>
+      body {
+        min-width: 200px;
+        max-width: 790px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="markdown-body"><p>Threads share the parents text, open files, globals, children, pending signals, stack, heap </p>
+<pre class="hljs"><code>main() { 
+    pthread_create ( &amp;tid, &lt;attributes&gt;, &lt;thread_routine&gt;, args )
+    pthread_join(tid, &amp;status)
+}</code></pre><h2 id="user-threads"><a class="header-link" href="#user-threads"></a>User Threads</h2>
+<ul class="list">
+<li>handled by threads library </li>
+<li>threads share the parents process time on the cpu</li>
+<li>cheaper then kernal</li>
+</ul>
+<h2 id="kernal-threads"><a class="header-link" href="#kernal-threads"></a>Kernal Threads</h2>
+<ul class="list">
+<li>handled by the OS </li>
+<li>OS schedules threads on CPU</li>
+<li>multiprocess on system </li>
+</ul>
+<h2 id="threads-model"><a class="header-link" href="#threads-model"></a>Threads Model</h2>
+<ul class="list">
+<li>many to one model: multiple user threads on a single kernal thread</li>
+<li>one to one model: a single user thread is on a single kernal thread</li>
+<li>many to many model: user threads are run on many kernal threads</li>
+</ul>
+<h2 id="lwp-light-weight-process"><a class="header-link" href="#lwp-light-weight-process"></a>LWP: Light Weight Process </h2>
+<ul class="list">
+<li>A thread can read/write another threads vars</li>
+<li>No protection between threads</li>
+<li>Design threads carefully</li>
+</ul>
+<h2 id="advantages-of-threads-over-processes"><a class="header-link" href="#advantages-of-threads-over-processes"></a>Advantages of threads over processes</h2>
+<ul class="list">
+<li>Threads share address space - very useful for several applications</li>
+<li>less system overhead to </li>
+<li>scheduling your kernal threads on multiprocessor systems allows your process to get more CPU time concurrency</li>
+</ul>
+<h2 id="signals"><a class="header-link" href="#signals"></a>Signals</h2>
+<ul class="list">
+<li>notify a process that an event has occurred </li>
+</ul>
+<pre class="hljs"><code><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;signal.h&gt;</span>
+main() { 
+    <span class="hljs-comment">// Catches ctrl-c</span>
+    signal( SIGINT, alter ); 
+} 
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">alter</span><span class="hljs-params">()</span> </span>{ 
+    <span class="hljs-built_in">printf</span>( <span class="hljs-string">"I wont quit\n"</span> ); 
+}</code></pre>    </article>
+  </body>
+</html>
