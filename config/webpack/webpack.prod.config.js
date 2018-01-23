@@ -43,7 +43,7 @@ module.exports = {
       // Allows you to import scss files and also adds unique hash to avoid naming conflicts
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader?modules=true&localIdentName=[name]__[local]___[hash:base64:5]', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       // Allows you to import images and stuff
       {
