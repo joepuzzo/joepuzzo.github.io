@@ -1,31 +1,59 @@
 import React from 'react';
+import Media from 'react-media';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Home from './components/Home';
 import Nav from './components/Nav';
+import Scroll from './components/Scroll';
+
+const Intro = () => (
+  <div className="title">
+    <h2>Joe Puzzo</h2>
+    <h6>Love for building cool shit and Node.js</h6>
+  </div>
+);
+
+const SmallHeader = () => (
+  <Intro />
+);
+
+const LargeHeader = () => (
+  <div className="row">
+    <div className="one-half column">
+      <Intro />
+    </div>
+    <div className="one-half column">
+      <img className="me" alt="joepuzzo" src="/assets/images/me.jpg" />
+    </div>
+  </div>
+);
 
 const App = () => (
   <div>
     <header className="header container">
-      <div className="row">
-        <div className="one-half column title">
-          <h2>Joe Puzzo</h2>
-          <h6>Love for building cool shit and Node.js</h6>
-        </div>
-        <div className="one-half column">
-          <img className="me" src="/assets/images/me.jpg"/>
-        </div>
-      </div>
+      <Media query="(min-width: 1000px)">
+        {matches => ( matches
+          ? <LargeHeader />
+          : <SmallHeader />
+        )}
+      </Media>
     </header>
-    <section className="testcode">
-    </section>
+    <section className="testcode" />
     <Nav />
-    <main className="container">
-      <Switch>
-        <Route path="/home" component={Home} />
-        <Redirect to="/home" />
-      </Switch>
-    </main>
+    <Scroll
+      target="nav"
+      render={({ active, height }) => (
+        <main className="container" style={{ paddingTop: active ? height + 40 : 0 }}>
+          <Switch>
+            <Route path="/home" component={Home} />
+            <Redirect to="/home" />
+          </Switch>
+        </main>
+    )} />
+    <footer className="text-center footer">
+      <a className="inverse-link" href="https://github.com/joepuzzo">Github</a>
+      <a className="inverse-link" href="https://www.linkedin.com/in/joe-puzzo-97612657">Linkedin</a>
+    </footer>
   </div>
 );
 

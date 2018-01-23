@@ -15,6 +15,7 @@ module.exports = {
   devtool: 'inline-source-map',
   // Defines where webpack start to load
   entry: [
+    'babel-polyfill',
     // React Hot Loaders patch ( only for dev )
     'react-hot-loader/patch',
     // Path to the apps entrypoint
@@ -30,7 +31,8 @@ module.exports = {
   devServer: {
     contentBase: './',
     port: 4000,
-    historyApiFallback: true
+    historyApiFallback: true,
+    host: '0.0.0.0'
   },
   /**
    *
