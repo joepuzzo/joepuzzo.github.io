@@ -19,7 +19,7 @@ const Nav = () => (
             <ul className="navbar-list">
               <NavItem path="/home" text="Home" />
               <NavItem path="/about" text="About" />
-              <NavItem path="#home" text="Foo" />
+              <NavItem path="/statemachine" text="IPV6 State Machine" />
               <NavItem path="#home" text="Bar" />
             </ul>
           </div>

@@ -1,13 +1,4 @@
-const HTMLWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-
-// Will automagically inject the output file 'bundle.js' into the index.html
-const configureHTMLWebpackPlugin = () => (
-  new HTMLWebpackPlugin({
-    template: path.join(__dirname, '../../index.html'),
-    filename: 'index.html',
-    inject: 'body',
-  }));
 
 // The actual webpack configuration object
 module.exports = {
@@ -52,10 +43,5 @@ module.exports = {
       },
 
     ]
-  },
-  // Webpack plugins
-  plugins: [
-    // This is where we call the plugin we defined above
-    configureHTMLWebpackPlugin(),
-  ]
+  }
 };

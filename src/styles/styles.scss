@@ -36,6 +36,13 @@
   height: 400px;
 }
 
+.state-machine {
+  background-image: url(/assets/images/v6StateMachine.png);
+  //background-size: cover;
+  background-position: top 0px left 0px;
+  //height: 700px;
+}
+
 .container {
   max-width: 1024px;
 }
@@ -146,11 +153,11 @@ hr {
 }
 
 .bg-offwhite {
-  background-color: rgb(255,249,244);
+  background-color: #FFF9ED;
 }
 
 .bg-grey {
-  background-color: rgb(227,223,219);
+  background-color: #D1C5B1;
 }
 
 .card {
