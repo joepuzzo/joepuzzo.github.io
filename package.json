@@ -16,6 +16,7 @@
     "babel-polyfill": "^6.26.0",
     "graphql": "^0.12.3",
     "graphql-tag": "^2.6.1",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0",
@@ -24,6 +25,7 @@
     "react-reveal": "^0.7.3",
     "react-router-dom": "^4.2.2",
     "react-scroll": "^1.7.6",
+    "react-typist": "^2.0.4",
     "redux": "^3.7.2"
   },
   "devDependencies": {

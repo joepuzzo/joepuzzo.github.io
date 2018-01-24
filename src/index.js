@@ -15,6 +15,7 @@ import Reducer from './redux/reducers';
 import { createClient } from './graphql';
 
 import './styles/styles.scss';
+import './styles/Typist.scss';
 
 const store = createStore(Reducer);
 const client = createClient();
