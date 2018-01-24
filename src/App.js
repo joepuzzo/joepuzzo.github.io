@@ -3,6 +3,7 @@ import Media from 'react-media';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Home from './components/Home';
+import About from './components/About';
 import Nav from './components/Nav';
 import Scroll from './components/Scroll';
 
@@ -30,22 +31,25 @@ const LargeHeader = () => (
 
 const App = () => (
   <div>
-    <header className="header container">
-      <Media query="(min-width: 1000px)">
-        {matches => ( matches
-          ? <LargeHeader />
-          : <SmallHeader />
-        )}
-      </Media>
-    </header>
+    <div className="bg-offwhite">
+      <header className="header container">
+        <Media query="(min-width: 1000px)">
+          {matches => ( matches
+            ? <LargeHeader />
+            : <SmallHeader />
+          )}
+        </Media>
+      </header>
+    </div>
     <section className="testcode" />
     <Nav />
     <Scroll
       target="nav"
       render={({ active, height }) => (
-        <main className="container" style={{ paddingTop: active ? height + 40 : 0 }}>
+        <main style={{ paddingTop: active ? height : 0 }}>
           <Switch>
             <Route path="/home" component={Home} />
+            <Route path="/about" component={About} />
             <Redirect to="/home" />
           </Switch>
         </main>

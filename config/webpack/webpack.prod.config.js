@@ -18,7 +18,7 @@ module.exports = {
   ],
   // Defines where webpack will output the bundled file
   output: {
-    filename: 'transformed.[hash].js',
+    filename: 'bundle.js',
     path: path.join(__dirname, '../../'),
     publicPath: '/'
   },
