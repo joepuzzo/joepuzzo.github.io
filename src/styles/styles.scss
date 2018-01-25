@@ -14,7 +14,8 @@
   margin-top: 30px;
   position: absolute;
   z-index: 2;
-  box-shadow: -6px 10px 4px;
+  //box-shadow: -6px 10px 4px;
+  box-shadow: -3px 2px 7px rgba(0, 0, 0, 0.5);
   /* Larger than tablet */
   @media (min-width: 1000px) {
     display: block;
@@ -160,6 +161,15 @@ hr {
   background-color: #D1C5B1;
 }
 
+.bg-darkgrey {
+  background-color: #2b2b2b;
+}
+
 .card {
-  margin: 2rem;
+  height: 100%;
+  padding: 2rem;
+}
+
+.flex {
+  display: flex;
 }

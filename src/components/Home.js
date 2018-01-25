@@ -40,6 +40,9 @@ const Home = () => (
           <img className="joe-in-pics-pic" style={{height: 100}} alt="docker" src="/assets/images/docker.png" />
         </Fade>
         <Fade delay={150} duration={2000}>
+          <img className="joe-in-pics-pic" style={{height: 200}} alt="react" src="/assets/images/react.png" />
+        </Fade>
+        <Fade delay={150} duration={2000}>
           <img className="joe-in-pics-pic" style={{height: 120}} alt="docker" src="/assets/images/travis.png" />
         </Fade>
         <Fade delay={150} duration={2000}>

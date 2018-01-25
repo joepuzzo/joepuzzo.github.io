@@ -8,6 +8,27 @@ import StateMachine from './components/StateMachine';
 import Nav from './components/Nav';
 import Scroll from './components/Scroll';
 
+import Particles from 'react-particles-js';
+
+const particleConfig = {
+  particles: {
+    number: {
+      value: 20
+    },
+    color: {
+      value: '#2b2b2b'
+    },
+    size: {
+      value: 3,
+      random: false
+    },
+    line_linked: {
+      enable: true,
+      color: '#2b2b2b',
+    }
+  }
+};
+
 const Intro = () => (
   <div className="title">
     <h2>Joe Puzzo</h2>
@@ -33,6 +54,7 @@ const LargeHeader = () => (
 const App = () => (
   <div>
     <div className="bg-offwhite">
+      <Particles params={particleConfig} height={200} style={{ position: 'absolute', top: '0', left: '0' }} />
       <header className="header container">
         <Media query="(min-width: 1000px)">
           {matches => ( matches
