@@ -8,7 +8,7 @@ const About = () => (
       <h2 className="text-center">About</h2>
       <div className="row mb-3">
         <Fade delay={150} duration={2000} className="col">
-          <div className="col twelve columns lakewinni text-center"></div>
+          <div className="col lakewinni text-center"></div>
         </Fade>
       </div>
       <div className="row">

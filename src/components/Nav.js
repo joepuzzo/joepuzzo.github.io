@@ -81,6 +81,7 @@ const Nav = () => (
                   <PopoverItem path="/statemachine" text="StateMachine" />
                 </ul>
               </PopOver>
+              <NavItem path="/resume" text="Resume" />
             </ul>
           </div>
         </nav>

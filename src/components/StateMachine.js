@@ -10,11 +10,6 @@ const StateMachine = () => (
           <img className="state-machine" alt="v6 state machine" src="/assets/images/v6StateMachine.png" />
         </Fade>
       </div>
-      {/* <div className="row mb-3">
-        <div className="twelve columns text-center">
-          <img className="state-machine" alt="v6 state machine" src="/assets/images/v6StateMachine.png" />
-        </div>
-      </div> */}
     </section>
   </div>
 );

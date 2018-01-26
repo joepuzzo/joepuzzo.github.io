@@ -7,6 +7,7 @@ import About from './components/About';
 import StateMachine from './components/StateMachine';
 import Nav from './components/Nav';
 import Scroll from './components/Scroll';
+import Resume from './components/Resume';
 
 import Particles from 'react-particles-js';
 
@@ -74,6 +75,7 @@ const App = () => (
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/statemachine" component={StateMachine} />
+            <Route path="/resume" component={Resume} />
             <Redirect to="/home" />
           </Switch>
         </main>
