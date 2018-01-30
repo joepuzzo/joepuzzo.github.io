@@ -8,6 +8,7 @@ import StateMachine from './components/StateMachine';
 import Nav from './components/Nav';
 import Scroll from './components/Scroll';
 import Resume from './components/Resume';
+import me from '../assets/images/me.jpg';
 
 import Particles from 'react-particles-js';
 
@@ -47,7 +48,7 @@ const LargeHeader = () => (
       <Intro />
     </div>
     <div className="one-half column">
-      <img className="me" alt="joepuzzo" src="/assets/images/me.jpg" />
+      <img className="me" alt="joepuzzo" src={me} />
     </div>
   </div>
 );

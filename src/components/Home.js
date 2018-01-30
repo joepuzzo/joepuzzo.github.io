@@ -2,6 +2,7 @@ import React from 'react';
 import { Fade } from 'react-reveal';
 import TypistCycle from './TypistCycle';
 import Typist from 'react-typist';
+import gitImage from '../../assets/images/git.png';
 
 const Home = () => (
   <div>
@@ -31,7 +32,7 @@ const Home = () => (
       <section className="section container text-center">
         <h2>Myself described with logos</h2>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 100}} alt="git" src="/assets/images/git.png" />
+          <img className="joe-in-pics-pic" style={{height: 100}} alt="git" src={gitImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
           <img className="joe-in-pics-pic" style={{height: 200}} alt="node" src="/assets/images/node.png" />
