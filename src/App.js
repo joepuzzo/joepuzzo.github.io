@@ -5,6 +5,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import StateMachine from './components/StateMachine';
+import CNC from './components/CNC';
 import Nav from './components/Nav';
 import Scroll from './components/Scroll';
 import Resume from './components/Resume';
@@ -76,6 +77,7 @@ const App = () => (
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/statemachine" component={StateMachine} />
+            <Route path="/cnc" component={CNC} />
             <Route path="/resume" component={Resume} />
             <Redirect to="/home" />
           </Switch>

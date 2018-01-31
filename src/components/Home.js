@@ -3,6 +3,11 @@ import { Fade } from 'react-reveal';
 import TypistCycle from './TypistCycle';
 import Typist from 'react-typist';
 import gitImage from '../../assets/images/git.png';
+import nodeImage from '../../assets/images/node.png';
+import dockerImage from '../../assets/images/docker.png';
+import reactImage from '../../assets/images/react.png';
+import travisImage from '../../assets/images/travis.png';
+import budImage from '../../assets/images/bud.png';
 
 const Home = () => (
   <div>
@@ -35,19 +40,19 @@ const Home = () => (
           <img className="joe-in-pics-pic" style={{height: 100}} alt="git" src={gitImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 200}} alt="node" src="/assets/images/node.png" />
+          <img className="joe-in-pics-pic" style={{height: 200}} alt="node" src={nodeImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 100}} alt="docker" src="/assets/images/docker.png" />
+          <img className="joe-in-pics-pic" style={{height: 100}} alt="docker" src={dockerImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 200}} alt="react" src="/assets/images/react.png" />
+          <img className="joe-in-pics-pic" style={{height: 200}} alt="react" src={reactImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 120}} alt="docker" src="/assets/images/travis.png" />
+          <img className="joe-in-pics-pic" style={{height: 120}} alt="docker" src={travisImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 120}} alt="budlight" src="/assets/images/bud.png" />
+          <img className="joe-in-pics-pic" style={{height: 120}} alt="budlight" src={budImage} />
         </Fade>
       </section>
     </div>
