@@ -1,6 +1,7 @@
 import React from 'react';
 import Media from 'react-media';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import Particles from 'react-particles-js';
 
 import Home from './components/Home';
 import About from './components/About';
@@ -9,9 +10,8 @@ import CNC from './components/CNC';
 import Nav from './components/Nav';
 import Scroll from './components/Scroll';
 import Resume from './components/Resume';
+import ReactForm from './components/ReactForm';
 import me from '../assets/images/me.jpg';
-
-import Particles from 'react-particles-js';
 
 const particleConfig = {
   particles: {
@@ -78,6 +78,7 @@ const App = () => (
             <Route path="/about" component={About} />
             <Route path="/statemachine" component={StateMachine} />
             <Route path="/cnc" component={CNC} />
+            <Route path="/react-form" component={ReactForm} />
             <Route path="/resume" component={Resume} />
             <Redirect to="/home" />
           </Switch>

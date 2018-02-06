@@ -79,6 +79,7 @@ const Nav = () => (
                 <ul className="popover-list" style={{right: 20}}>
                   <PopoverItem path="/statemachine" text="StateMachine" />
                   <PopoverItem path="/cnc" text="CNC" />
+                  <PopoverItem path="/react-form" text="React Form" />
                 </ul>
               </PopOver>
               <NavItem path="/resume" text="Resume" />
