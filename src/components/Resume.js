@@ -104,7 +104,7 @@ class Resume extends Component {
                     in Angular JS.
                   </li>
                   <li>
-                    Realized Angular JS is crap and helped lead the charge to refactor
+                    Realized Angular JS did not fit our needs and helped lead the charge to refactor
                     and rebuild entire portal in React.
                   </li>
                   <li>
