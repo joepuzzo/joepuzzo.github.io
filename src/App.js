@@ -12,6 +12,10 @@ import Scroll from './components/Scroll';
 import Resume from './components/Resume';
 import ReactForm from './components/ReactForm';
 import me from '../assets/images/me.jpg';
+import DroneCommunicationProtocol from './components/DroneCommunicationProtocol';
+import RobotArm from './components/RobotArm';
+import MrRoboto from './components/MrRoboto';
+import Drone from './components/Drone'
 
 const particleConfig = {
   particles: {
@@ -80,6 +84,10 @@ const App = () => (
             <Route path="/cnc" component={CNC} />
             <Route path="/react-form" component={ReactForm} />
             <Route path="/resume" component={Resume} />
+            <Route path="/robot-arm" component={RobotArm} />
+            <Route path="/mr-roboto" component={MrRoboto} />
+            <Route path="/drone" component={Drone} />
+            <Route path="/collision-avoidence" component={DroneCommunicationProtocol} />
             <Redirect to="/home" />
           </Switch>
         </main>

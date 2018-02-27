@@ -150,6 +150,14 @@
   border-bottom: 1px solid grey;
 }
 
+.d-flex{
+  display: flex;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
 hr {
   background-color: grey;
   height: 1px;
@@ -178,6 +186,12 @@ hr {
   height: 400px;
   display: inline-block;
   width: 100%;
+}
+
+.pic {
+  margin-bottom: 2rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .bg-offwhite {
