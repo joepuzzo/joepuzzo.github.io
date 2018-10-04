@@ -44,20 +44,22 @@ class PopOver extends Component {
 
   close() {
     this.setState({ open: false });
-    console.log("HERE");
+    console.log('HERE');
   }
 
   render() {
     return (
       <li className="navbar-item">
         <a
-          onClick={(e)=>{ this.toggle(e) }}
+          onClick={(e) => {
+ this.toggle(e); 
+}}
           className="navbar-link"
           href="#"
           data-popover="#codeNavPopover">
           {this.props.text}
         </a>
-        <div id="codeNavPopover" className={`popover ${ this.state.open ? 'open' : ''}`} style={this.props.style}>
+        <div id="codeNavPopover" className={`popover ${this.state.open ? 'open' : ''}`} style={this.props.style}>
           {this.props.children}
         </div>
       </li>
@@ -76,9 +78,9 @@ const Nav = () => (
               <NavItem path="/home" text="Home" />
               <NavItem path="/about" text="About" />
               <PopOver text="Projects" style={{ left: '-30%' }}>
-                <ul className="popover-list" style={{right: 20}}>
+                <ul className="popover-list" style={{ right: 20 }}>
                   <PopoverItem path="/cnc" text="CNC" />
-                  <PopoverItem path="/react-form" text="React Form" />
+                  <PopoverItem path="/informed" text="Informed" />
                   <PopoverItem path="/robot-arm" text="Robot Arm" />
                   <PopoverItem path="/mr-roboto" text="Mr.Roboto" />
                   <PopoverItem path="/drone" text="Drone" />

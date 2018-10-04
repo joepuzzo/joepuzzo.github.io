@@ -35,24 +35,24 @@ const Home = () => (
     </div>
     <div className="bg-offwhite">
       <section className="section container text-center">
-        <h2>Myself described with logos</h2>
+        <h2>Me described with logos!</h2>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 100}} alt="git" src={gitImage} />
+          <img className="joe-in-pics-pic" style={{ height: 100 }} alt="git" src={gitImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 200}} alt="node" src={nodeImage} />
+          <img className="joe-in-pics-pic" style={{ height: 200 }} alt="node" src={nodeImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 100}} alt="docker" src={dockerImage} />
+          <img className="joe-in-pics-pic" style={{ height: 100 }} alt="docker" src={dockerImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 200}} alt="react" src={reactImage} />
+          <img className="joe-in-pics-pic" style={{ height: 200 }} alt="react" src={reactImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 120}} alt="docker" src={travisImage} />
+          <img className="joe-in-pics-pic" style={{ height: 120 }} alt="docker" src={travisImage} />
         </Fade>
         <Fade delay={150} duration={2000}>
-          <img className="joe-in-pics-pic" style={{height: 120}} alt="budlight" src={budImage} />
+          <img className="joe-in-pics-pic" style={{ height: 120 }} alt="budlight" src={budImage} />
         </Fade>
       </section>
     </div>

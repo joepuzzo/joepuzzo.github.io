@@ -8,7 +8,7 @@ const About = () => (
       <h2 className="text-center">About</h2>
       <div className="row mb-3">
         <Fade delay={150} duration={2000} className="col">
-          <div className="col lakewinni text-center"></div>
+          <div className="col lakewinni text-center" />
         </Fade>
       </div>
       <div className="row">
@@ -37,7 +37,7 @@ const About = () => (
           <div className="card bg-offwhite">
             <h5>CNC</h5>
             <p>
-              I built a CNC machine that can carve stuff out of wood. Def had
+              I built a CNC machine that can carve stuff out of wood and aluminum. Definitely had
               more fun building the machine then i do making stuff with it :)
             </p>
           </div>

@@ -15,7 +15,7 @@ import me from '../assets/images/me.jpg';
 import DroneCommunicationProtocol from './components/DroneCommunicationProtocol';
 import RobotArm from './components/RobotArm';
 import MrRoboto from './components/MrRoboto';
-import Drone from './components/Drone'
+import Drone from './components/Drone';
 
 const particleConfig = {
   particles: {
@@ -82,7 +82,7 @@ const App = () => (
             <Route path="/about" component={About} />
             <Route path="/statemachine" component={StateMachine} />
             <Route path="/cnc" component={CNC} />
-            <Route path="/react-form" component={ReactForm} />
+            <Route path="/informed" component={ReactForm} />
             <Route path="/resume" component={Resume} />
             <Route path="/robot-arm" component={RobotArm} />
             <Route path="/mr-roboto" component={MrRoboto} />
