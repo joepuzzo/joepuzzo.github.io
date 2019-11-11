@@ -60,6 +60,7 @@ class Resume extends Component {
                   <ul>
                     <li>Node.js</li>
                     <li>React</li>
+                    <li>IPv6</li>
                     <li>HTML-CSS-SCSS</li>
                     <li>Docker</li>
                     <li>CICD</li>
@@ -71,7 +72,7 @@ class Resume extends Component {
                     <li>Object Oriented Design</li>
                     <li>Open source development</li>
                     <li>Linux</li>
-                    <li>C</li>
+                    <li>C & C++</li>
                     <li>Python</li>
                     <li>Ruby</li>
                   </ul>
@@ -79,9 +80,8 @@ class Resume extends Component {
                 <div className="col-sm-4">
                   <ul>
                     <li>TDD</li>
-                    <li>IPV6</li>
                     <li>WireShark</li>
-                    <li>SVN & Git</li>
+                    <li>Git</li>
                     <li>Team design & development</li>
                     <li>Simple Robotics</li>
                   </ul>
@@ -96,35 +96,26 @@ class Resume extends Component {
                   </strong>
                 </h6>
                 <p>
-                  Worked with scrum team to architect and develop MidMarked Portal site for Liberty Mutual Benefits.
+                  Worked with scrum team to architect and develop externally facing site for Liberty Mutual Benefits.
                 </p>
                 <ul>
                   <li>
-                    Worked with scrum team to design and build out Portal site from scratch
-                    in Angular JS.
-                  </li>
-                  <li>
-                    Realized Angular JS did not fit our needs and helped lead the charge to refactor
-                    and rebuild entire portal in React.
-                  </li>
-                  <li>
                     Worked with scrum team to design and build out component library
-                    to assist in portal development.
+                    to assist in site development.
                   </li>
                   <li>
                     Implemented Test Driven Development, utilizing various test libraries
-                    such as Mocha, Chia & Sinon; Enzyme; and Junit.
+                    such as Mocha, Chia & Sinon; Enzyme; Junit; and JEST.
                   </li>
                   <li>
-                    Utilized Docker to deploy containers to AWS.
+                    Utilized Docker to deploy containers to AWS and Docker Enterprise.
                   </li>
                   <li>
                     Utilized the Atlasian tool suite for Source Control ( Bitbucket ),
                     CICD ( Bamboo ), and KanBan/Scrum organization ( Jira ).
                   </li>
                   <li>
-                    Developed various backend  microservices using Java Spring. I wish
-                    I had used Node.js :(
+                    Developed various backend microservices using Java Spring and Node.js.
                   </li>
                 </ul>
               </div>

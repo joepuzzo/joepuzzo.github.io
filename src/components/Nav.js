@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import ReactTooltip from 'react-tooltip';
 
 import Scroll from './Scroll';
 
@@ -44,7 +43,6 @@ class PopOver extends Component {
 
   close() {
     this.setState({ open: false });
-    console.log('HERE');
   }
 
   render() {
@@ -52,8 +50,8 @@ class PopOver extends Component {
       <li className="navbar-item">
         <a
           onClick={(e) => {
- this.toggle(e); 
-}}
+            this.toggle(e); 
+          }}
           className="navbar-link"
           href="#"
           data-popover="#codeNavPopover">
@@ -76,7 +74,7 @@ const Nav = () => (
           <div className="container">
             <ul className="navbar-list">
               <NavItem path="/home" text="Home" />
-              <NavItem path="/about" text="About" />
+              {/* <NavItem path="/about" text="About" /> */}
               <PopOver text="Projects" style={{ left: '-30%' }}>
                 <ul className="popover-list" style={{ right: 20 }}>
                   <PopoverItem path="/cnc" text="CNC" />

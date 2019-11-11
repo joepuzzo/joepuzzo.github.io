@@ -30,6 +30,10 @@
   opacity:0.9;
 }
 
+.code {
+  padding: 10px;
+}
+
 .lakewinni {
   background-image: url(/assets/images/lakewinni.jpg);
   background-size: cover;
@@ -101,6 +105,10 @@
 
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .section {
@@ -204,6 +212,7 @@ hr {
 
 .bg-darkgrey {
   background-color: #2b2b2b;
+  color: white;
 }
 
 .card {

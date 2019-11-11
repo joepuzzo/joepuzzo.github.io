@@ -39,7 +39,7 @@ const particleConfig = {
 const Intro = () => (
   <div className="title">
     <h2>Joe Puzzo</h2>
-    <h6>Love for building cool shit and Node.js</h6>
+    <h5>"I love to build cool shit"</h5>
   </div>
 );
 
@@ -61,7 +61,7 @@ const LargeHeader = () => (
 const App = () => (
   <div>
     <div className="bg-offwhite">
-      <Particles params={particleConfig} height={200} style={{ position: 'absolute', top: '0', left: '0' }} />
+      {/* <Particles params={particleConfig} height={200} style={{ position: 'absolute', top: '0', left: '0' }} /> */}
       <header className="header container">
         <Media query="(min-width: 1000px)">
           {matches => ( matches

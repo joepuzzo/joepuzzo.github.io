@@ -8,6 +8,13 @@ import dockerImage from '../../assets/images/docker.png';
 import reactImage from '../../assets/images/react.png';
 import travisImage from '../../assets/images/travis.png';
 import budImage from '../../assets/images/bud.png';
+import { Link } from 'react-router-dom';
+
+const ProjectLink = ({ path, text, ...rest }) => (
+  <span className="inline-block">
+    <Link className="inverse-link" to={path} {...rest}>{text}</Link>
+  </span>
+);
 
 const Home = () => (
   <div>
@@ -24,7 +31,8 @@ const Home = () => (
               'Joe loves to write code',
               'Joe loves the terminal',
               'Vim > Emacs :)',
-              '<3 Node.js'
+              '<3 Node.js',
+              '<3 RFC documents ( seriously )'
             ]}
             numberOfCycles={-1} // loop indefinitely
             segmentDelay={1.2} // stop for 1.2s at end line
@@ -33,9 +41,22 @@ const Home = () => (
         </div>
       </section>
     </div>
+    <div className="bg-darkgrey ">
+      <section className="section container text-center">
+        <h5>What to look at?</h5>
+        <ProjectLink path="/collision-avoidence" text="Drone Communication Protocol" />
+        <ProjectLink path="/informed" text="Informed" />
+        <ProjectLink path="/robot-arm" text="Robot Arm" />
+        <ProjectLink path="/mr-roboto" text="Mr.Roboto" />
+        <ProjectLink path="/drone" text="Drone" />
+        <ProjectLink path="/cnc" text="CNC" />
+        <ProjectLink path="/statemachine" text="IPv6 StateMachine" />
+        <span className="inline-block"><a className="inverse-link" href="https://github.com/joepuzzo">Github</a></span>
+      </section>
+    </div>
     <div className="bg-offwhite">
       <section className="section container text-center">
-        <h2>Me described with logos!</h2>
+        <h2 className="mb-4">Me described with logos!</h2>
         <Fade delay={150} duration={2000}>
           <img className="joe-in-pics-pic" style={{ height: 100 }} alt="git" src={gitImage} />
         </Fade>
@@ -51,9 +72,9 @@ const Home = () => (
         <Fade delay={150} duration={2000}>
           <img className="joe-in-pics-pic" style={{ height: 120 }} alt="docker" src={travisImage} />
         </Fade>
-        <Fade delay={150} duration={2000}>
+        {/* <Fade delay={150} duration={2000}>
           <img className="joe-in-pics-pic" style={{ height: 120 }} alt="budlight" src={budImage} />
-        </Fade>
+        </Fade> */}
       </section>
     </div>
   </div>
