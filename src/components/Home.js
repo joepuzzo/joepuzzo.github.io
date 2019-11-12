@@ -46,6 +46,7 @@ const Home = () => (
         <h5>What to look at?</h5>
         <ProjectLink path="/collision-avoidence" text="Drone Communication Protocol" />
         <ProjectLink path="/informed" text="Informed" />
+        <ProjectLink path="/bucket" text="Helicopter Bucket" />
         <ProjectLink path="/robot-arm" text="Robot Arm" />
         <ProjectLink path="/mr-roboto" text="Mr.Roboto" />
         <ProjectLink path="/drone" text="Drone" />

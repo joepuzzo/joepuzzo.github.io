@@ -77,6 +77,7 @@ const Nav = () => (
               {/* <NavItem path="/about" text="About" /> */}
               <PopOver text="Projects" style={{ left: '-30%' }}>
                 <ul className="popover-list" style={{ right: 20 }}>
+                  <PopoverItem path="/bucket" text="Helicopter Bucket" />
                   <PopoverItem path="/cnc" text="CNC" />
                   <PopoverItem path="/informed" text="Informed" />
                   <PopoverItem path="/robot-arm" text="Robot Arm" />
